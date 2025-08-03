@@ -1,0 +1,107 @@
+/* UrlShortener.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e2f0fb);
+  min-height: 100vh;
+}
+
+/* Centering with flex for cleaner full-page layout */
+.url-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.url-container h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.url-container input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.url-container input[type="text"]:focus {
+  border-color: #3498db;
+}
+
+.url-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.url-container button:hover {
+  background-color: #2980b9;
+}
+
+.result {
+  margin-top: 25px;
+  background-color: #eaf6ff;
+  padding: 15px;
+  border-radius: 6px;
+  word-wrap: break-word;
+}
+
+.result a {
+  display: block;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result button {
+  background-color: #2ecc71;
+}
+
+.result button:hover {
+  background-color: #27ae60;
+}
+
+.error {
+  margin-top: 15px;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .url-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .url-container input[type="text"] {
+    width: 100%;
+  }
+
+  .url-container h1 {
+    font-size: 22px;
+  }
+
+  .url-container button {
+    width: 100%;
+  }
+}
